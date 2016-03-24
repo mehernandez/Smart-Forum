@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACDADC861CA366C400065ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADC851CA366C400065ABB /* AppDelegate.swift */; };
+		ACDADC881CA366C400065ABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADC871CA366C400065ABB /* ViewController.swift */; };
+		ACDADC8B1CA366C400065ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDADC891CA366C400065ABB /* Main.storyboard */; };
+		ACDADC8D1CA366C400065ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDADC8C1CA366C400065ABB /* Assets.xcassets */; };
+		ACDADC901CA366C400065ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDADC8E1CA366C400065ABB /* LaunchScreen.storyboard */; };
+		ACDADC9B1CA366C500065ABB /* Smart_ForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADC9A1CA366C500065ABB /* Smart_ForumTests.swift */; };
+		ACDADCA61CA366C500065ABB /* Smart_ForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADCA51CA366C500065ABB /* Smart_ForumUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACDADC971CA366C500065ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDADC7A1CA366C400065ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDADC811CA366C400065ABB;
+			remoteInfo = "Smart Forum";
+		};
+		ACDADCA21CA366C500065ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDADC7A1CA366C400065ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDADC811CA366C400065ABB;
+			remoteInfo = "Smart Forum";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACDADC821CA366C400065ABB /* Smart Forum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Forum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDADC851CA366C400065ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACDADC871CA366C400065ABB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACDADC8A1CA366C400065ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACDADC8C1CA366C400065ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACDADC8F1CA366C400065ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACDADC911CA366C400065ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDADC961CA366C500065ABB /* Smart ForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart ForumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDADC9A1CA366C500065ABB /* Smart_ForumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ForumTests.swift; sourceTree = "<group>"; };
+		ACDADC9C1CA366C500065ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDADCA11CA366C500065ABB /* Smart ForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart ForumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDADCA51CA366C500065ABB /* Smart_ForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ForumUITests.swift; sourceTree = "<group>"; };
+		ACDADCA71CA366C500065ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACDADC7F1CA366C400065ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC931CA366C500065ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC9E1CA366C500065ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACDADC791CA366C400065ABB = {
+			isa = PBXGroup;
+			children = (
+				ACDADC841CA366C400065ABB /* Smart Forum */,
+				ACDADC991CA366C500065ABB /* Smart ForumTests */,
+				ACDADCA41CA366C500065ABB /* Smart ForumUITests */,
+				ACDADC831CA366C400065ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACDADC831CA366C400065ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACDADC821CA366C400065ABB /* Smart Forum.app */,
+				ACDADC961CA366C500065ABB /* Smart ForumTests.xctest */,
+				ACDADCA11CA366C500065ABB /* Smart ForumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACDADC841CA366C400065ABB /* Smart Forum */ = {
+			isa = PBXGroup;
+			children = (
+				ACDADC851CA366C400065ABB /* AppDelegate.swift */,
+				ACDADC871CA366C400065ABB /* ViewController.swift */,
+				ACDADC891CA366C400065ABB /* Main.storyboard */,
+				ACDADC8C1CA366C400065ABB /* Assets.xcassets */,
+				ACDADC8E1CA366C400065ABB /* LaunchScreen.storyboard */,
+				ACDADC911CA366C400065ABB /* Info.plist */,
+			);
+			path = "Smart Forum";
+			sourceTree = "<group>";
+		};
+		ACDADC991CA366C500065ABB /* Smart ForumTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACDADC9A1CA366C500065ABB /* Smart_ForumTests.swift */,
+				ACDADC9C1CA366C500065ABB /* Info.plist */,
+			);
+			path = "Smart ForumTests";
+			sourceTree = "<group>";
+		};
+		ACDADCA41CA366C500065ABB /* Smart ForumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACDADCA51CA366C500065ABB /* Smart_ForumUITests.swift */,
+				ACDADCA71CA366C500065ABB /* Info.plist */,
+			);
+			path = "Smart ForumUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACDADC811CA366C400065ABB /* Smart Forum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDADCAA1CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart Forum" */;
+			buildPhases = (
+				ACDADC7E1CA366C400065ABB /* Sources */,
+				ACDADC7F1CA366C400065ABB /* Frameworks */,
+				ACDADC801CA366C400065ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Forum";
+			productName = "Smart Forum";
+			productReference = ACDADC821CA366C400065ABB /* Smart Forum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACDADC951CA366C500065ABB /* Smart ForumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDADCAD1CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart ForumTests" */;
+			buildPhases = (
+				ACDADC921CA366C500065ABB /* Sources */,
+				ACDADC931CA366C500065ABB /* Frameworks */,
+				ACDADC941CA366C500065ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDADC981CA366C500065ABB /* PBXTargetDependency */,
+			);
+			name = "Smart ForumTests";
+			productName = "Smart ForumTests";
+			productReference = ACDADC961CA366C500065ABB /* Smart ForumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACDADCA01CA366C500065ABB /* Smart ForumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDADCB01CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart ForumUITests" */;
+			buildPhases = (
+				ACDADC9D1CA366C500065ABB /* Sources */,
+				ACDADC9E1CA366C500065ABB /* Frameworks */,
+				ACDADC9F1CA366C500065ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDADCA31CA366C500065ABB /* PBXTargetDependency */,
+			);
+			name = "Smart ForumUITests";
+			productName = "Smart ForumUITests";
+			productReference = ACDADCA11CA366C500065ABB /* Smart ForumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACDADC7A1CA366C400065ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mario Hernandez";
+				TargetAttributes = {
+					ACDADC811CA366C400065ABB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J825CW78Y6;
+					};
+					ACDADC951CA366C500065ABB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J825CW78Y6;
+						TestTargetID = ACDADC811CA366C400065ABB;
+					};
+					ACDADCA01CA366C500065ABB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J825CW78Y6;
+						TestTargetID = ACDADC811CA366C400065ABB;
+					};
+				};
+			};
+			buildConfigurationList = ACDADC7D1CA366C400065ABB /* Build configuration list for PBXProject "Smart Forum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACDADC791CA366C400065ABB;
+			productRefGroup = ACDADC831CA366C400065ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACDADC811CA366C400065ABB /* Smart Forum */,
+				ACDADC951CA366C500065ABB /* Smart ForumTests */,
+				ACDADCA01CA366C500065ABB /* Smart ForumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACDADC801CA366C400065ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDADC901CA366C400065ABB /* LaunchScreen.storyboard in Resources */,
+				ACDADC8D1CA366C400065ABB /* Assets.xcassets in Resources */,
+				ACDADC8B1CA366C400065ABB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC941CA366C500065ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC9F1CA366C500065ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACDADC7E1CA366C400065ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDADC881CA366C400065ABB /* ViewController.swift in Sources */,
+				ACDADC861CA366C400065ABB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC921CA366C500065ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDADC9B1CA366C500065ABB /* Smart_ForumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDADC9D1CA366C500065ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDADCA61CA366C500065ABB /* Smart_ForumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACDADC981CA366C500065ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDADC811CA366C400065ABB /* Smart Forum */;
+			targetProxy = ACDADC971CA366C500065ABB /* PBXContainerItemProxy */;
+		};
+		ACDADCA31CA366C500065ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDADC811CA366C400065ABB /* Smart Forum */;
+			targetProxy = ACDADCA21CA366C500065ABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACDADC891CA366C400065ABB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDADC8A1CA366C400065ABB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACDADC8E1CA366C400065ABB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDADC8F1CA366C400065ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACDADCA81CA366C500065ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACDADCA91CA366C500065ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACDADCAB1CA366C500065ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Forum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-Forum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACDADCAC1CA366C500065ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Forum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-Forum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACDADCAE1CA366C500065ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart ForumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-ForumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Forum.app/Smart Forum";
+			};
+			name = Debug;
+		};
+		ACDADCAF1CA366C500065ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart ForumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-ForumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Forum.app/Smart Forum";
+			};
+			name = Release;
+		};
+		ACDADCB11CA366C500065ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart ForumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-ForumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Forum";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ACDADCB21CA366C500065ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart ForumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-ForumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Forum";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACDADC7D1CA366C400065ABB /* Build configuration list for PBXProject "Smart Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDADCA81CA366C500065ABB /* Debug */,
+				ACDADCA91CA366C500065ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDADCAA1CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDADCAB1CA366C500065ABB /* Debug */,
+				ACDADCAC1CA366C500065ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACDADCAD1CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart ForumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDADCAE1CA366C500065ABB /* Debug */,
+				ACDADCAF1CA366C500065ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACDADCB01CA366C500065ABB /* Build configuration list for PBXNativeTarget "Smart ForumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDADCB11CA366C500065ABB /* Debug */,
+				ACDADCB21CA366C500065ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACDADC7A1CA366C400065ABB /* Project object */;
+}
