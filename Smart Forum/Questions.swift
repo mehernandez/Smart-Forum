@@ -10,7 +10,7 @@ import UIKit
 
 class Questions : UITableViewController {
     
-    var data = ["¿How can I install the IBM's VPN in my MAC?","¿How can I connect my own machine to the IBM wireless network?","¿What is a PMR?","¿How can I implement a cluster on IBM's Websphere?","¿Which frameworks are integrated in the IBM's Big Insights platform?"]
+    var data = ["¿How can I install the IBM's VPN in my MAC?","¿How can I connect my own machine to the IBM wireless network?","¿What is a PMR?","¿How can I implement a cluster on IBM's Websphere App Server?","¿Which frameworks are integrated in the IBM's Big Insights platform?","¿How can I request access to IBM software licences?"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
