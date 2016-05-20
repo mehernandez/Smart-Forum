@@ -17,6 +17,18 @@
 		ACDADC901CA366C400065ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDADC8E1CA366C400065ABB /* LaunchScreen.storyboard */; };
 		ACDADC9B1CA366C500065ABB /* Smart_ForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADC9A1CA366C500065ABB /* Smart_ForumTests.swift */; };
 		ACDADCA61CA366C500065ABB /* Smart_ForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDADCA51CA366C500065ABB /* Smart_ForumUITests.swift */; };
+		ACF3B90F1CED01FB00782A62 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B9091CED01FB00782A62 /* Alamofire.framework */; };
+		ACF3B9101CED01FB00782A62 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B90A1CED01FB00782A62 /* AlamofireObjectMapper.framework */; };
+		ACF3B9111CED01FB00782A62 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B90B1CED01FB00782A62 /* HTTPStatusCodes.framework */; };
+		ACF3B9121CED01FB00782A62 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B90C1CED01FB00782A62 /* ObjectMapper.framework */; };
+		ACF3B9131CED01FB00782A62 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B90D1CED01FB00782A62 /* Starscream.framework */; };
+		ACF3B9141CED01FB00782A62 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF3B90E1CED01FB00782A62 /* WatsonDeveloperCloud.framework */; };
+		ACF3B9161CED038300782A62 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B9091CED01FB00782A62 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF3B9171CED038300782A62 /* AlamofireObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B90A1CED01FB00782A62 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF3B9181CED038300782A62 /* HTTPStatusCodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B90B1CED01FB00782A62 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF3B9191CED038300782A62 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B90C1CED01FB00782A62 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF3B91A1CED038300782A62 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B90D1CED01FB00782A62 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF3B91B1CED038300782A62 /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACF3B90E1CED01FB00782A62 /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ACF3B9151CED036E00782A62 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACF3B9161CED038300782A62 /* Alamofire.framework in CopyFiles */,
+				ACF3B9171CED038300782A62 /* AlamofireObjectMapper.framework in CopyFiles */,
+				ACF3B9181CED038300782A62 /* HTTPStatusCodes.framework in CopyFiles */,
+				ACF3B9191CED038300782A62 /* ObjectMapper.framework in CopyFiles */,
+				ACF3B91A1CED038300782A62 /* Starscream.framework in CopyFiles */,
+				ACF3B91B1CED038300782A62 /* WatsonDeveloperCloud.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AC6D1FBD1CA467E8009B54EF /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		AC6D1FBF1CA46E9F009B54EF /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -53,6 +83,12 @@
 		ACDADCA11CA366C500065ABB /* Smart ForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart ForumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDADCA51CA366C500065ABB /* Smart_ForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ForumUITests.swift; sourceTree = "<group>"; };
 		ACDADCA71CA366C500065ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF3B9091CED01FB00782A62 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ACF3B90A1CED01FB00782A62 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		ACF3B90B1CED01FB00782A62 /* HTTPStatusCodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPStatusCodes.framework; path = Carthage/Build/iOS/HTTPStatusCodes.framework; sourceTree = "<group>"; };
+		ACF3B90C1CED01FB00782A62 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		ACF3B90D1CED01FB00782A62 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		ACF3B90E1CED01FB00782A62 /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF3B90F1CED01FB00782A62 /* Alamofire.framework in Frameworks */,
+				ACF3B9101CED01FB00782A62 /* AlamofireObjectMapper.framework in Frameworks */,
+				ACF3B9121CED01FB00782A62 /* ObjectMapper.framework in Frameworks */,
+				ACF3B9131CED01FB00782A62 /* Starscream.framework in Frameworks */,
+				ACF3B9111CED01FB00782A62 /* HTTPStatusCodes.framework in Frameworks */,
+				ACF3B9141CED01FB00782A62 /* WatsonDeveloperCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +125,7 @@
 		ACDADC791CA366C400065ABB = {
 			isa = PBXGroup;
 			children = (
+				ACF3B9081CED014100782A62 /* Frameworks */,
 				ACDADC841CA366C400065ABB /* Smart Forum */,
 				ACDADC991CA366C500065ABB /* Smart ForumTests */,
 				ACDADCA41CA366C500065ABB /* Smart ForumUITests */,
@@ -134,6 +177,19 @@
 			path = "Smart ForumUITests";
 			sourceTree = "<group>";
 		};
+		ACF3B9081CED014100782A62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACF3B9091CED01FB00782A62 /* Alamofire.framework */,
+				ACF3B90A1CED01FB00782A62 /* AlamofireObjectMapper.framework */,
+				ACF3B90B1CED01FB00782A62 /* HTTPStatusCodes.framework */,
+				ACF3B90C1CED01FB00782A62 /* ObjectMapper.framework */,
+				ACF3B90D1CED01FB00782A62 /* Starscream.framework */,
+				ACF3B90E1CED01FB00782A62 /* WatsonDeveloperCloud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +200,7 @@
 				ACDADC7E1CA366C400065ABB /* Sources */,
 				ACDADC7F1CA366C400065ABB /* Frameworks */,
 				ACDADC801CA366C400065ABB /* Resources */,
+				ACF3B9151CED036E00782A62 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -414,6 +471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Smart Forum/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-Forum";
@@ -425,6 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Smart Forum/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MED.Smart-Forum";

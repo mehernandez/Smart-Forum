@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,16 +23,6 @@
                                     <rect key="frame" x="80" y="40" width="240" height="250"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-sC-2Oo">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="microphone"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="486" width="108" height="84"/>
-                                </variation>
-                                <connections>
-                                    <action selector="talk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXH-MV-EB4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Watson I need to intall IBM's VPN on my MAC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-XH-qry">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,17 +30,7 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="304" width="191" height="82"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, I just learned the answer ! It is all explained on this tutorial https://nordvpn.com/tutorials/ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-km-Yaa">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" red="0.28235294117647058" green="0.78823529411764703" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="126" y="394" width="217" height="84"/>
+                                    <rect key="frame" x="32" y="304" width="272" height="82"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="7w7-T5-5AO">
@@ -71,34 +51,94 @@
                                     <segue destination="tWM-Cj-L3z" kind="show" id="6TI-y5-ueg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-sC-2Oo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="microphone"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="530" width="108" height="84"/>
+                                </variation>
+                                <connections>
+                                    <action selector="speak2:" destination="BYZ-38-t0r" eventType="touchDown" id="mww-IW-Qum"/>
+                                    <action selector="speak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyb-jK-8vD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po2-Ar-VSp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="x"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="256" y="545" width="43" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOv-2z-dBz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-Y4-MaU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="check"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="302" y="541" width="52" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="good:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zR7-Lm-dwe"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7mk-pD-qLu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="402" width="286" height="120"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9T-1T-AR8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="info"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="320" y="40" width="52" height="45"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ujt-zx-A2E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="thq-B9-fme"/>
-                                <exclude reference="Y0T-sC-2Oo"/>
                                 <exclude reference="5fG-XH-qry"/>
-                                <exclude reference="Dyg-km-Yaa"/>
                                 <exclude reference="7w7-T5-5AO"/>
                                 <exclude reference="JfZ-Yy-gLv"/>
+                                <exclude reference="Y0T-sC-2Oo"/>
+                                <exclude reference="Po2-Ar-VSp"/>
+                                <exclude reference="4bP-Y4-MaU"/>
+                                <exclude reference="7mk-pD-qLu"/>
+                                <exclude reference="d9T-1T-AR8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="thq-B9-fme"/>
-                                <include reference="Y0T-sC-2Oo"/>
                                 <include reference="5fG-XH-qry"/>
-                                <include reference="Dyg-km-Yaa"/>
                                 <include reference="7w7-T5-5AO"/>
                                 <include reference="JfZ-Yy-gLv"/>
+                                <include reference="Y0T-sC-2Oo"/>
+                                <include reference="Po2-Ar-VSp"/>
+                                <include reference="4bP-Y4-MaU"/>
+                                <include reference="7mk-pD-qLu"/>
+                                <include reference="d9T-1T-AR8"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="btnAnswer" destination="JfZ-Yy-gLv" id="Eww-PK-9pB"/>
+                        <outlet property="btnBad" destination="Po2-Ar-VSp" id="1ug-DT-iw5"/>
+                        <outlet property="btnGood" destination="4bP-Y4-MaU" id="rjG-Ig-JjE"/>
                         <outlet property="btnMic" destination="Y0T-sC-2Oo" id="rcU-vL-onE"/>
                         <outlet property="imgAnimated" destination="7w7-T5-5AO" id="6lm-gi-PXD"/>
-                        <outlet property="lbAnswer" destination="Dyg-km-Yaa" id="vF2-LV-T1O"/>
+                        <outlet property="lbAnswer" destination="7mk-pD-qLu" id="J7J-Yu-nFJ"/>
                         <outlet property="lbQuestion" destination="5fG-XH-qry" id="7yF-ar-gqG"/>
                     </connections>
                 </viewController>
@@ -271,7 +311,10 @@
     <resources>
         <image name="Logo" width="1412" height="2127"/>
         <image name="Watson" width="1253" height="1253"/>
+        <image name="check" width="128" height="128"/>
+        <image name="info" width="256" height="256"/>
         <image name="microphone" width="450" height="400"/>
         <image name="send" width="512" height="512"/>
+        <image name="x" width="256" height="256"/>
     </resources>
 </document>
