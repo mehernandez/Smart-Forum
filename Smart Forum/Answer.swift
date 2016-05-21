@@ -18,6 +18,8 @@ class Answer : UIViewController {
     
     @IBOutlet weak var lbQuestion: UILabel!
     
+    var ques = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +30,8 @@ class Answer : UIViewController {
         lbQuestion.clipsToBounds = true
         
         self.title = "Answer"
+        
+        lbQuestion.text = ques
     }
     
     
@@ -46,5 +50,12 @@ class Answer : UIViewController {
         })
         
     }
+    
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.textArea.endEditing(true)
+    }
+    
+    
     
 }

@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Alamofire
 
 class Questions : UITableViewController {
     
-    var data = ["¿How can I install the IBM's VPN in my MAC?","¿How can I connect my own machine to the IBM wireless network?","¿What is a PMR?","¿How can I implement a cluster on IBM's Websphere App Server?","¿Which frameworks are integrated in the IBM's Big Insights platform?","¿How can I request access to IBM software licences?"]
+    var data : [[String: String]] = [[:]]
+    
+    let url = "http://agile-crag-45223.herokuapp.com/traerPreguntas"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Questions"
+        
+        Alamofire.request(.GET, self.url).validate()
+            .responseJSON { response in
+                
+                
+                print(response.result.value)
+                
+                self.data = response.result.value as! [[String: String]]
+                
+                self.tableView.reloadData()
+                
+        }
+
+        
     }
     
     
@@ -31,10 +48,35 @@ class Questions : UITableViewController {
         
         let cel = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Cell
         
-        cel.title.text = data[indexPath.row]
+        cel.title.text = data[indexPath.row]["question"]
         
         return cel
         
     }
+    
+    
+    @IBAction func goBack(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "seg") {
+            let svc = segue.destinationViewController as! Answer;
+            
+            svc.ques = data[self.tableView.indexPathForSelectedRow!.row]["question"]!
+            
+        }
+        
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+    }
+    
     
 }

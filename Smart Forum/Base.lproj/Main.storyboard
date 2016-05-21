@@ -187,7 +187,7 @@
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="title" destination="VF0-FQ-BsN" id="fZe-Qp-JYa"/>
-                                    <segue destination="ja1-ZE-Bks" kind="show" id="tbT-7A-1Sq"/>
+                                    <segue destination="ja1-ZE-Bks" kind="show" identifier="seg" id="DK1-VY-e4O"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -196,7 +196,13 @@
                             <outlet property="delegate" destination="V0i-VD-o2v" id="jKV-8q-GUH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="eCa-cM-aHC"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="eCa-cM-aHC">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="USe-BJ-GYo">
+                            <connections>
+                                <action selector="goBack:" destination="V0i-VD-o2v" id="Ywk-hX-BzA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJp-2S-iZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,14 +220,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿how can I install IBM's VPN on my MAC?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-rn-VzA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿how can I install IBM's VPN on my MAC?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-rn-VzA">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="122" width="307" height="113"/>
+                                    <rect key="frame" x="47" y="121" width="307" height="113"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-EY-ykT">
@@ -230,35 +236,36 @@
                                     <rect key="frame" x="71" y="357" width="247" height="156"/>
                                 </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-sP-XKP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-sP-XKP">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="330" width="251" height="168"/>
+                                    <rect key="frame" x="75" y="330" width="251" height="168"/>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-7g-sYE">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="send"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="162" y="547" width="76" height="50"/>
-                                </variation>
-                                <connections>
-                                    <action selector="send:" destination="ja1-ZE-Bks" eventType="touchUpInside" id="QO5-G3-ZaL"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can write the answer in the blue box and win points!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9h-KW-cEc">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="255" width="307" height="52"/>
+                                    <rect key="frame" x="52" y="253" width="307" height="52"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-7g-sYE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="send"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="547" width="76" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="send:" destination="ja1-ZE-Bks" eventType="touchUpInside" id="QO5-G3-ZaL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -266,8 +273,8 @@
                                 <exclude reference="nxL-rn-VzA"/>
                                 <exclude reference="LIR-EY-ykT"/>
                                 <exclude reference="UKo-sP-XKP"/>
-                                <exclude reference="bdf-7g-sYE"/>
                                 <exclude reference="O9h-KW-cEc"/>
+                                <exclude reference="bdf-7g-sYE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -275,8 +282,8 @@
                                 <include reference="nxL-rn-VzA"/>
                                 <include reference="LIR-EY-ykT"/>
                                 <include reference="UKo-sP-XKP"/>
-                                <include reference="bdf-7g-sYE"/>
                                 <include reference="O9h-KW-cEc"/>
+                                <include reference="bdf-7g-sYE"/>
                             </mask>
                         </variation>
                     </view>
