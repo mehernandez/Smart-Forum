@@ -167,20 +167,22 @@ class ViewController: UIViewController {
             
             }, completion: {(finished:Bool) in
                 
-                /*
+                
                 let parameters = [
-                    "question": self.lbQuestion.text!
+                    "question": self.lbQuestion.text! ,
+                    "type" : "bad"
                 ]
                 
                 
-                Alamofire.request(.POST, "http://agile-crag-45223.herokuapp.com/ask", parameters: parameters, encoding: .JSON).validate()
+                Alamofire.request(.POST, "http://agile-crag-45223.herokuapp.com/feedback", parameters: parameters, encoding: .JSON).validate()
                     .responseString { response in
+                        print(response)
                         self.lbAnswer.text = "Thanks for your feedback, your question is now submitted on Smart Forum"
                 }
-                */
+                
                 
                 //por ahora
-                self.lbAnswer.text = "Thanks for your feedback, your question is now submitted on Smart Forum"
+                //self.lbAnswer.text = "Thanks for your feedback, your question is now submitted on Smart Forum"
 
         })
         
@@ -198,19 +200,21 @@ class ViewController: UIViewController {
             
             }, completion: {(finished:Bool) in
                 
-                /*
+                
                 let parameters = [
-                    "question": self.lbQuestion.text!
+                    "question": self.lbQuestion.text! ,
+                    "type" : "good",
+                    "cannonical": self.json["cannonical"]!
                 ]
                 
                 
-                Alamofire.request(.POST, "http://agile-crag-45223.herokuapp.com/ask", parameters: parameters, encoding: .JSON).validate()
+                Alamofire.request(.POST, "http://agile-crag-45223.herokuapp.com/feedback", parameters: parameters, encoding: .JSON).validate()
                     .responseString { response in
                         //self.lbAnswer.text = "Thanks for your feedback, your question is now submitted on Smart Forum"
                         
-                        print("Check")
+                        print(response)
                 }
-                */
+                
                 
         })
         

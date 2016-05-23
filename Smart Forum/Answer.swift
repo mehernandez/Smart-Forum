@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class Answer : UIViewController {
     
@@ -40,14 +41,30 @@ class Answer : UIViewController {
         
         btnSend.hidden = true
         
-        UIView.animateWithDuration(2, animations: {
-            
-            self.imgWatson.alpha = 1
-            
+        let parameters = [
+            "question": self.lbQuestion.text! ,
+            "answer" : self.textArea.text!
+        ]
         
         
-            
-        })
+        Alamofire.request(.POST, "http://agile-crag-45223.herokuapp.com/resolverPregunta", parameters: parameters, encoding: .JSON).validate()
+            .responseString { response in
+                print(response)
+                
+                UIView.animateWithDuration(2, animations: {
+                    
+                    self.imgWatson.alpha = 1
+                    
+                    
+                    }, completion: {(finished:Bool) in
+                        
+                        
+                    }
+                )
+        }
+
+        
+
         
     }
     

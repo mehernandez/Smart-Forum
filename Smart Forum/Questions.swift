@@ -20,6 +20,11 @@ class Questions : UITableViewController {
         
         self.title = "Questions"
         
+
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         Alamofire.request(.GET, self.url).validate()
             .responseJSON { response in
                 
@@ -31,8 +36,6 @@ class Questions : UITableViewController {
                 self.tableView.reloadData()
                 
         }
-
-        
     }
     
     
