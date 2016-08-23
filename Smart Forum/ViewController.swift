@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     
     
-    var speechToText : SpeechToText = SpeechToText(username: "808e7a9a-901a-47b1-b640-6c09b0282557", password: "hMNBSlD6N2LD")
+    var speechToText : SpeechToText = SpeechToText(username: "b0ce87b0-67fa-430f-808c-aab26f95f378", password: "Zam0axEsTTah")
     
     var stopStreamingDefault: (Void -> Void)? = nil
     
